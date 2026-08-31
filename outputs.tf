@@ -60,11 +60,6 @@ output "cloudwatch_log_groups_tags_all" {
 }
 
 # --- aws_cloudwatch_log_transformer ---
-output "cloudwatch_log_transformers_id" {
-  description = "Map of id values across all cloudwatch_log_transformers, keyed the same as var.cloudwatch_log_transformers"
-  value       = module.cloudwatch_log_transformers.cloudwatch_log_transformers_id
-}
-
 output "cloudwatch_log_transformers_log_group_arn" {
   description = "Map of log_group_arn values across all cloudwatch_log_transformers, keyed the same as var.cloudwatch_log_transformers"
   value       = module.cloudwatch_log_transformers.cloudwatch_log_transformers_log_group_arn
